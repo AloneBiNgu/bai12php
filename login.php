@@ -15,7 +15,7 @@
         $responseData = array();
         if ($result->num_rows > 0) {
             session_regenerate_id(true);
-            $_SESSION['username'] = $_POST['username'];
+            $_SESSION['is_login'] = true;
             $responseData['ok'] = true;
         } else {
             $responseData['ok'] = false;
